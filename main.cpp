@@ -74,7 +74,21 @@ int main()
                 }
 
             }
-            
+                break;
+            case 2:
+            {
+                cout << "\n Enter the item to remove from the cart : ";
+                string name;
+                getline(cin, name);
+
+                if (cart.find(name) != cart.end())
+                {
+                    //Add the units back to the shelf
+                    itemsAvailable[name].units += cart[name].units;
+                    cart.erase(name);
+                }
+            }
+                break;
 
     return 0;
 }
