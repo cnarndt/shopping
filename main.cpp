@@ -52,5 +52,29 @@ int main()
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
 
+        switch (choice)
+        {
+            case 1:
+            {
+                cout << "\n Enter the item name : ";
+                string name;
+                getline(cin, name);
+
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+                cout << "\nEnter the item units : ";
+                int units;
+                cin >> units;
+
+                if (itemsAvailable.find(name) != itemsAvailable.end())
+                {
+                    //Subtract the units from item available
+                    cart[name] = { itemsAvailable[name].unitPrice,units };
+                    itemsAvailable[name].units -= units;
+                }
+
+            }
+            
+
     return 0;
 }
