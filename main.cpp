@@ -104,5 +104,14 @@ int main()
                 aPair) {
                     return acc + (aPair.second.unitPrice * aPair.second.units);
                 });
-    return 0;
+                cout << total << endl;
+            }
+                break;
+            case 4:
+                exit(0);
+
+            default:
+                break;
+        }
+    }
 }
