@@ -27,11 +27,11 @@ struct Record
 int main()
 {
     map<string, Record> cart, itemsAvailable = {
-            {"Shampoo",{23.12,6}},
-            {"Hair Oil",{42.12,5}},
+            {"Soda",{15.32,6}},
+            {"Toilet Paper",{12.12,4}},
             {"Rice",{13.12,8}},
             {"ToothPaste",{12.12,4}},
-            {"Shaving Gel",{73.12,5}}
+            {"Shaving Cream",{73.12,5}}
     };
 
     while (true)
