@@ -89,6 +89,20 @@ int main()
                 }
             }
                 break;
+            case 3:
+            {
+                cout << "\n Items in the cart are\n";
+                for (auto element : cart)
+                {
+                    cout << element.first << " " << element.second.unitPrice << " " << element.second.units << endl;
+                }
+                cout << "\n Cart Total : ";
+                //Find the cart total
+                double total = std::accumulate(cart.begin(), cart.end(), 0.0, [&](double acc, std::pair<string, Record>
 
+
+                aPair) {
+                    return acc + (aPair.second.unitPrice * aPair.second.units);
+                });
     return 0;
 }
