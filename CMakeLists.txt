@@ -3,4 +3,4 @@ project(shopping)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(shopping main.cpp)
+add_executable(shopping shopping.cpp)
