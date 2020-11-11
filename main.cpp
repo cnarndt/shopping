@@ -34,6 +34,23 @@ int main()
             {"Shaving Gel",{73.12,5}}
     };
 
- 
+    while (true)
+    {
+        cout << "\nItems Available\n";
+        for (auto element : itemsAvailable)
+        {
+            cout << element.first << " " << element.second.unitPrice << " " << element.second.units << endl;
+        }
+        cout << "\n****** Menu ******";
+        cout << "\n1. Add Items to the cart";
+        cout << "\n2. Remove Items to the cart";
+        cout << "\n3. Display Items in the cart";
+        cout << "\n4. Exit";
+        cout << "\n Enter you choice : ";
+        int choice;
+        cin >> choice;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+
     return 0;
 }
